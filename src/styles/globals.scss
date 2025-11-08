@@ -1,0 +1,16 @@
+@use './fonts.scss';
+@use './variables.scss' as *;
+
+body {
+  background: $color-bg;
+  color: $color-primary;
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1270px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
