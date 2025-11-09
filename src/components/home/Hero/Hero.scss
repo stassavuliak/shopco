@@ -1,0 +1,89 @@
+.hero {
+  padding: 110px 0;
+  background-color: $color-secondary-bg;
+  background-image: url("@/assets/images/hero.png");
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  @media (max-width: 1024px) {
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  &__content {
+    flex: 1;
+    max-width: 580px;
+  }
+
+  &__title {
+    font-size: 64px;
+    @media (max-width: 768px) {
+      font-size: 40px;
+    }
+  }
+
+  &__subtitle {
+    color: #777;
+    margin: 32px 0;
+  }
+
+  &__btn {
+    max-width: 210px;
+  }
+
+  &__stats {
+    display: flex;
+    margin-top: 48px;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+
+  &__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &:nth-child(2) {
+      border-left: 1px solid rgba(#000, .1);
+      border-right: 1px solid rgba(#000, .1);
+      padding: 0 32px;
+      margin: 0 32px;
+    }
+    @media (max-width: 768px) {
+      align-items: center;
+    }
+  }
+
+  &__stat-number {
+    font-size: 40px;
+    font-weight: 700;
+    color: $color-secondary;
+  }
+
+  &__stat-label {
+    font-size: 16px;
+    color: $color-primary;
+  }
+
+  &__image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+      width: 100%;
+      max-width: 520px;
+      height: auto;
+      object-fit: cover;
+
+      @media (max-width: 1024px) {
+        max-width: 400px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
