@@ -25,7 +25,7 @@ const ProductCard = ({ product }) => {
         </div>
 
         <div className={styles.info}>
-          <h3 className={styles.title}>{title}</h3>
+          <p className={styles.title}>{title}</p>
 
           <div className={styles.rating}>
             <RatingStars rating={rating} />

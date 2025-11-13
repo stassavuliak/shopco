@@ -1,0 +1,15 @@
+.divider {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1270px;   
+  padding: 0 15px;    
+  position: relative;
+}
+
+.divider::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(0,0,0, 0.1);
+}
