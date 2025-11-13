@@ -4,6 +4,7 @@ import Header from "./components/layout/Header/Header";
 // import Footer from "./components/layout/Footer/Footer";
 // import Newsletter from "./components/layout/Newsletter/Newsletter";
 import AppRouter from "./router/AppRouter";
+import ScrollToTop from "./components/ui/ScrollToTop/ScrollToTop";
 
 import "./styles/globals.scss";
 
@@ -12,6 +13,7 @@ const App = () => {
     <Router>
       <div className="app">
         <Header />
+        <ScrollToTop />
         <main>
           <AppRouter />
         </main>
