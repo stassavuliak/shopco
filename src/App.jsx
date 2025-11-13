@@ -1,18 +1,25 @@
-import Header from './components/layout/Header/Header.jsx'
-import Hero from './components/home/Hero/Hero.jsx'
-import Brands from './components/home/Brands/Brands.jsx'
-import NewArrivals from './components/home/NewArrivals/NewArrivals.jsx'
+import { BrowserRouter as Router } from "react-router-dom";
 
-function App() {
-  
+import Header from "./components/layout/Header/Header";
+// import Footer from "./components/layout/Footer/Footer";
+// import Newsletter from "./components/layout/Newsletter/Newsletter";
+import AppRouter from "./router/AppRouter";
+
+import "./styles/globals.scss";
+
+const App = () => {
   return (
-   <>
-    <Header/>
-    <Hero/>
-    <Brands/>
-    <NewArrivals/>
-   </>
-  )
-}
+    <Router>
+      <div className="app">
+        <Header />
+        <main>
+          <AppRouter />
+        </main>
+        {/* <Newsletter /> */}
+        {/* <Footer /> */}
+      </div>
+    </Router>
+  );
+};
 
-export default App
+export default App;

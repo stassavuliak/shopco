@@ -24,8 +24,8 @@
     border-radius: 9999px;
     font-weight: 500;
     transition: all 0.3s ease;
-    cursor: pointer;
-
+    max-width: 218px;
+    width: 100%;
     &:hover {
       background-color: #000;
       color: #fff;
@@ -41,7 +41,7 @@
     background-color: $color-secondary-bg;
     border-radius: 20px;
     padding: 32px;
-
+    margin-bottom: 16px;
     img {
       width: 100%;
       height: auto;
@@ -50,15 +50,16 @@
 
   &__title {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     margin: 16px 0 8px;
+    color: $color-secondary;
   }
 
   &__rating {
     display: flex;
     align-items: center;
     gap: 4px;
-    margin-bottom: 8px;
+    margin: 8px 0;
 
     svg {
       width: 16px;

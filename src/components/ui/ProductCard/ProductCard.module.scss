@@ -1,0 +1,80 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
+
+.card {
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 270px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.info {
+  padding: 12px 4px;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+
+  .ratingValue {
+    font-size: 0.85rem;
+    color: #777;
+  }
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .price {
+    font-weight: 600;
+    color: #000;
+    font-size: 1rem;
+  }
+
+  .oldPrice {
+    color: #999;
+    font-size: 0.9rem;
+    text-decoration: line-through;
+  }
+}

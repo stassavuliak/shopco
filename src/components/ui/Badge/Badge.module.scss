@@ -1,0 +1,21 @@
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  color: #fff;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+.new {
+  background-color: #000;
+}
+
+.discount {
+  background-color: #ffe2e2;
+  color: #d23c3c;
+}
