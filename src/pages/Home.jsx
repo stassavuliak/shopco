@@ -2,7 +2,9 @@ import Hero from "../components/home/Hero/Hero";
 import Brands from "../components/home/Brands/Brands";
 import ProductSection from "../components/ui/ProductSection/ProductSection";
 import { products } from "../data/products";
-import Devider from "../components/ui/Devider/Devider"
+import Devider from "../components/ui/Devider/Devider";
+import BrowseByStyle from "../components/home/BrowseByStyle/BrowseByStyle";
+import Testimonials from "../components/home/Testimonials/Testimonials";
 
 const Home = () => {
   const newArrivals = products.slice(0, 4);
@@ -15,6 +17,8 @@ const Home = () => {
       <ProductSection title="New Arrivals" products={newArrivals} />
       <Devider/>
       <ProductSection title="Top Selling" products={topSelling} />
+      <BrowseByStyle />
+      <Testimonials />
     </>
   );
 };

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./RatingStars.module.scss";
 
 const RatingStars = ({ rating, size = 16, showValue = true }) => {
