@@ -1,8 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import { ArrowLeft } from "lucide-react";
-import { ArrowRight } from "lucide-react";
-import { CircleCheck } from "lucide-react";
+import { ArrowLeft, ArrowRight, CircleCheck } from "lucide-react";
 import ratingStars from "../../../assets/images/rating.svg"
 
 

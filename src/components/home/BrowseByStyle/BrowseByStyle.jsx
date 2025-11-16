@@ -7,15 +7,14 @@ const items = [
   { id: 4, title: "Gym", image: "/images/categories/gym.png" },
 ];
 
-export default function BrowseByStyle() {
+const BrowseByStyle = () => {
   return (
     <section className="browse-style">
       <div className="container">
         <div className="browse-style__wrap">
-          <h2 className="browse-style__title">BROWSE BY DRESS STYLE</h2>
+          <h2 className="browse-style__title">Browse by dress style</h2>
 
           <div className="browse-style__grid">
-            {/* order kept natural in HTML */}
             <div className="browse-style__card card-1">
               <img src={items[0].image} alt={items[0].title} />
               <h3>{items[0].title}</h3>
@@ -41,3 +40,5 @@ export default function BrowseByStyle() {
     </section>
   );
 }
+
+export default BrowseByStyle;

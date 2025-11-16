@@ -5,6 +5,8 @@ import { products } from "../data/products";
 import Devider from "../components/ui/Devider/Devider";
 import BrowseByStyle from "../components/home/BrowseByStyle/BrowseByStyle";
 import Testimonials from "../components/home/Testimonials/Testimonials";
+import Newsletter from "../components/layout/Newsletter/Newsletter";
+import Footer from "../components/layout/Footer/Footer";
 
 const Home = () => {
   const newArrivals = products.slice(0, 4);
@@ -19,6 +21,8 @@ const Home = () => {
       <ProductSection title="Top Selling" products={topSelling} />
       <BrowseByStyle />
       <Testimonials />
+      <Newsletter />
+      <Footer />
     </>
   );
 };
